@@ -1,0 +1,12 @@
+.menu_entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+
+}
+
