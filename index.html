@@ -1,116 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Booki</title>
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-    <header>  
-            <div class="logo">
-                <h1>Booki</h1>
-            </div>   
-            <div class="menu_entete">
-                <nav>   
-                    <p> <a href="#">Hébergements</a> <a href="#">Activités</a></p>
-                </nav>    
-            </div>
-    </header>        
-                <h2>Trouver votre hébergement pour des vacances de rêve</h2> 
-                    <p>En plein centre-ville ou en pleine nature</p> 
-    
-                    <input id="searchbar" type="text" name="search" placeholder="Rechercher"><p>Rechercher</p>
-        <!--Le paragraphe "Rechercher" ci-dessous doit devenir un bouton cliquable
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Booki</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <header class="entete">
+      <div class="logo">
+        <h1>
+          <img
+            class="logo2"
+            src="images/Images Booki/logo/Booki.png"
+            alt="Booki"
+          />
+        </h1>
+      </div>
+      <nav>
+        <a class="smenu1" href="#ancre1">Hébergements</a>
+        <a class="smenu2" href="#ancre2">Activités</a>
+      </nav>
+      <br />
+
+      <h2 class="titre1">
+        Trouver votre hébergement pour des vacances de rêve
+      </h2>
+      <p class="titre2">En plein centre-ville ou en pleine nature</p>
+
+      <div class="formulaire">
+        <form method="post" action="">
+          <input type="text" id="Rechercher" placeholder="Votre ville" />
+          <input type="submit" value="Rechercher" />
+        </form>
+      </div>
+      <!--Le paragraphe "Rechercher" ci-dessous doit devenir un bouton cliquable
          à droite de la barre de recherche-->
-            
-            <div class="filtres">
-                <h3>Filtres</h3>
-                    <nav>
-        <!--Menu horizontal thématique-->            
-                        <ul>
-                            <li><a href="#">Economique</a></li>
-                            <li><a href="#">Familial</a></li>
-                            <li><a href="#">Romantique</a></li>
-                            <li><a href="#">Animaux autorisés</a></li>     
-                        </ul>
-                    </nav>
-            </div>    
-        <!--Bouton informatif + n logements trouvés dans la ville recherché 'en stand-by'-->  
+
+      <div class="filtres">
+        <h3>Filtres</h3>
+        <nav>
+          <!--Menu horizontal thématique-->
+          <ul class="filtre">
+            <li><a href="#">Economique</a></li>
+            <li><a href="#">Familial</a></li>
+            <li><a href="#">Romantique</a></li>
+            <li><a href="#">Animaux autorisés</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--Bouton informatif + n logements trouvés dans la ville recherché 'en stand-by'-->
+    </header>
     <main>
-        <section>
-            <div class="hebergements">
-                <h2>Hébergements à Marseille</h2>
-                    <nav>
-        <!--Menu horizontal "carte" des hébergements trouvés-->            
-                        <ul>
-                            <li> <a href="#">AubergeLaCanebiere</a><img src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg" alt="Auberge La Canebière"></li>
-                            <li> <a href="#">HôtelDuPort</a><img src="images/Images Booki/hebergements/4_small/hotel_du_port.jpg" alt="Hôtel du Port"></li>
-                            <li> <a href="#">HôtelLesMouettes</a><img src="images/Images Booki/hebergements/4_small/hotel_les_mouettes.jpg" alt="Hôtel Les Mouetttes"></li>
-                        </ul>
-                    </nav>        
-                    <nav>
-                        <ul>
-                            <li> <a href="#">HôtelDeLaMer</a><img src="images/Images Booki/hebergements/4_small/hotel_de_la_mer.jpg" alt="Hôtel de la mer"></li>
-                            <li> <a href="#">AubergeLePanier</a><img src="images/Images Booki/hebergements/4_small/auberge_le_panier.jpg" alt="Auberge Le Panier"></li>
-                            <li> <a href="#">HôtelChezAmina</a><img src="images/Images Booki/hebergements/4_small/hotel_chez_amina.jpg" alt="Hôtel Chez Amina"></li>
-                        </ul>
-                    </nav>
+      <section>
+        <div class="hebergements">
+          <h2 id="ancre1">Hébergements à Marseille</h2>
+
+          <nav class="test_menu">
+            <!--Menu horizontal "carte" des hébergements trouvés-->
+
+            <a href="#">AubergeLaCanebiere</a>
+            <div class="hf1">
+              <img
+                class="hf-1"
+                src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg"
+                alt="Auberge La Canebière"
+              />
             </div>
-        </section>     
-        <section>
-            <div class="activites">
-                <h2>Activités à Marseille</h2>
-                    <nav>
-        <!--Menu horizontal "carte" Activité à Marseille-->  
-                        <ul>
-                            <li> <a href="#">VieuxPort</a><img src="images/Images Booki/activites/3_medium/vieux_port.jpg" alt="Vieux-Port"></li>
-                            <li> <a href="#">FortDePomègues</a><img src="images/Images Booki/activites/3_medium/fort_de_pomegues.jpg" alt="Fort de Pomègues"></li> 
-                            <li> <a href="#">ParcNationalDesCalanques</a><img src="images/Images Booki/activites/3_medium/parc_nationnal.jpg" alt="Parc national des Calanques"></li>
-                            <li> <a href="#">NotreDameDeLaGarde</a><img src="images/Images Booki/activites/3_medium/notre_dame.jpg" alt="Notre-Dame-de-la-Garde"></li>  
-                        </ul>
-                    </nav>
+            />
+
+            <a href="#">HôtelDuPort</a>
+            <div class="hf2">
+              <img
+                class="hf-2"
+                src="images/Images Booki/hebergements/4_small/hotel_du_port.jpg"
+                alt="Hôtel du Port"
+              />
             </div>
-        </section>    
+            />
+            <a href="#">HôtelLesMouettes</a>
+            <div class="hf3">
+              <img
+                class="hf-3"
+                src="images/Images Booki/hebergements/4_small/hotel_les_mouettes.jpg"
+                alt="Hôtel Les Mouetttes"
+              />
+            </div>
+            />
+
+            <a href="#">HôtelDeLaMer</a>
+            <div class="hf4">
+              <img
+                class="hf-4"
+                src="images/Images Booki/hebergements/4_small/hotel_de_la_mer.jpg"
+                alt="Hôtel de la mer"
+              />
+            </div>
+            />
+
+            <a href="#">AubergeLePanier</a>
+            <div class="hf5">
+              <img
+                class="hf-5"
+                src="images/Images Booki/hebergements/4_small/auberge_le_panier.jpg"
+                alt="Auberge Le Panier"
+              />
+            </div>
+            />
+
+            <a href="#">HôtelChezAmina</a>
+            <div class="hf6">
+              <img
+                class="hf-6"
+                src="images/Images Booki/hebergements/4_small/hotel_chez_amina.jpg"
+                alt="Hôtel Chez Amina"
+              />
+            </div>
+            />
+          </nav>
+        </div>
+      </section>
+      <section>
+        <div class="activites">
+          <h2 id="ancre2">Activités à Marseille</h2>
+          <nav>
+            <!--Menu horizontal "carte" Activité à Marseille-->
+            <ul>
+              <li>
+                <a href="#">VieuxPort</a
+                ><img
+                  src="images/Images Booki/activites/3_medium/vieux_port.jpg"
+                  alt="Vieux-Port"
+                />
+              </li>
+              <li>
+                <a href="#">FortDePomègues</a
+                ><img
+                  src="images/Images Booki/activites/3_medium/fort_de_pomegues.jpg"
+                  alt="Fort de Pomègues"
+                />
+              </li>
+              <li>
+                <a href="#">ParcNationalDesCalanques</a
+                ><img
+                  src="images/Images Booki/activites/3_medium/parc_nationnal.jpg"
+                  alt="Parc national des Calanques"
+                />
+              </li>
+              <li>
+                <a href="#">NotreDameDeLaGarde</a
+                ><img
+                  src="images/Images Booki/activites/3_medium/notre_dame.jpg"
+                  alt="Notre-Dame-de-la-Garde"
+                />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </main>
 
     <aside>
-            <div class="populaires">
-                <h2>Les plus populaires</h2>
-                    <nav>
-        <!--Menu vertical "carte" Les plus populaires-->
-                        <ul>
-                            <li> <a href="#">HôtelLeSoleilDuMatin</a><img src="images/Images Booki/hebergements/4_small/hotel_le_soleil_du_matin.jpg" alt="Hôtel le soleil du matin"></li>
-                            <li> <a href="#">ChambreD'hôtesAuCoeurDeL'eau</a><img src="images/Images Booki/hebergements/4_small/chambre_hotes_au_coeur_de_eau.jpg" alt="Chambre d'hôtes au coeur de l'eau"></li>
-                            <li> <a href="#">HôtelBleuEtBlanc</a><img src="images/Images Booki/hebergements/4_small/hotel_bleu_et_blanc.jpg" alt="Hôtel Bleu et Blanc"></li>
-                        </ul>
-                    </nav>
-            </div>
+      <div class="populaires">
+        <h2>Les plus populaires</h2>
+        <nav>
+          <!--Menu vertical "carte" Les plus populaires-->
+          <ul>
+            <li>
+              <a href="#">HôtelLeSoleilDuMatin</a
+              ><img
+                src="images/Images Booki/hebergements/4_small/hotel_le_soleil_du_matin.jpg"
+                alt="Hôtel le soleil du matin"
+              />
+            </li>
+            <li>
+              <a href="#">ChambreD'hôtesAuCoeurDeL'eau</a
+              ><img
+                src="images/Images Booki/hebergements/4_small/chambre_hotes_au_coeur_de_eau.jpg"
+                alt="Chambre d'hôtes au coeur de l'eau"
+              />
+            </li>
+            <li>
+              <a href="#">HôtelBleuEtBlanc</a
+              ><img
+                src="images/Images Booki/hebergements/4_small/hotel_bleu_et_blanc.jpg"
+                alt="Hôtel Bleu et Blanc"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
     </aside>
 
-        <!--Pied de page + menu horizontal-->
-    <footer>           
-            <div class="pied-de-page">
-                     <nav>
-                        <p>A propos</p>    
-                            <ul>
-                            <li><a href="#">Fonctionnement du site</a></li>
-                            <li><a href="#">Conditions générales</a></li>
-                            <li><a href="#">Données et confidentialité</a></li>
-                        </ul>
-
-                        <p>Nos hébergements</p>
-                        <ul>
-                            <li><a href="#">Charte qualité</a></li>
-                            <li><a href="#">Proposer votre hôtel</a></li>
-                        </ul>
-
-                        <p>Assistance</p> 
-                        <ul>
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>  
-                    </nav>        
-            </div>    
+    <!--Pied de page + menu horizontal-->
+    <footer>
+      <div class="pied-de-page">
+        <nav class="pg">
+          <div class="pg1">
+            <p>A propos</p>
+            <ul>
+              <li><a href="#">Fonctionnement du site</a></li>
+              <li><a href="#">Conditions générales</a></li>
+              <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="pg2">
+            <p>Nos hébergements</p>
+            <ul>
+              <li><a href="#">Charte qualité</a></li>
+              <li><a href="#">Proposer votre hôtel</a></li>
+            </ul>
+          </div>
+          <div class="pg3">
+            <p>Assistance</p>
+            <ul>
+              <li><a href="#">Centre d'aide</a></li>
+              <li><a href="#">Nous contacter</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
