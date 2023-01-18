@@ -17,18 +17,26 @@ a {
   color: black;
 }
 
+/* -----------------------------------HEADER----------------------------------*/
+
 header.entete {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
+
 .smenu {
   display: flex;
   justify-content: space-between;
+  margin-right: 70px;
 }
 
 .smenu2:hover {
   color: #0065fc;
+}
+
+.smenu1 {
+  margin-right: 80px;
 }
 
 .smenu1:hover {
@@ -40,33 +48,41 @@ header.entete {
   height: 25px;
 }
 
-.hebergements {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 800-px;
-  height: 900px;
-  background-color: #d9d9d9;
-}
-.hf-1,
-.hf-2,
-.hf-3,
-.hf-4,
-.hf-5,
-.hf-6 {
-  width: 200px;
-  height: 100px;
-}
+/* ------------------------------ TITRE 1 et 2 -------------------------------*/
 
 .titre1 {
   top: 60px;
+  margin-bottom: 10px;
 }
 .titre2 {
   top: 100px;
+  margin-top: 10px;
+}
+
+/* ------------------------------- FORMULAIRE -------------------------------*/
+
+.formulaire {
+  display: flex;
+  top: 160px;
 }
 .barre {
-  top: 150px;
+  border: 1px solid #d9d9d9;
+  text-indent: 10px;
+  margin-left: 5px;
+  width: 150px;
+  height: 40px;
 }
+.rbouton {
+  border: 2px solid white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100px;
+  height: 44px;
+  background-color: #0065fc;
+  color: white;
+}
+
+/* -------------------------------- MENU FILTRES -----------------------------*/
 .filtres {
   display: flex;
   padding: 0;
@@ -88,32 +104,44 @@ header.entete {
   justify-content: space-between;
 }
 .bouton1 {
+  display: flex;
   border: 2px solid #d9d9d9;
-  width: 100px;
+  width: 150px;
   height: 35px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 18px;
+  flex-direction: row-reverse;
+  padding-right: 15px;
 }
 .bouton2 {
+  display: flex;
   border: 2px solid #d9d9d9;
-  width: 100px;
+  width: 110px;
   height: 35px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 18px;
+  flex-direction: row-reverse;
+  padding-right: 15px;
 }
 .bouton3 {
+  display: flex;
   border: 2px solid #d9d9d9;
   width: 150px;
   height: 35px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 18px;
+  flex-direction: row-reverse;
+  padding-right: 15px;
 }
 .bouton4 {
+  display: flex;
   border: 2px solid #d9d9d9;
-  width: 150px;
+  width: 200px;
   height: 35px;
-  padding: 5px;
+  padding: 7px;
   border-radius: 18px;
+  flex-direction: row-reverse;
+  padding-right: 15px;
 }
 .bouton1:hover,
 .bouton2:hover,
@@ -121,9 +149,30 @@ header.entete {
 .bouton4:hover {
   background-color: #deebff;
 }
+.fa-solid {
+  color: #0065fc;
+  padding-right: 15px;
+}
 
-.formulaire {
-  top: 160px;
+/* -------------------------------- SECTION -------------------------------*/
+
+.hebergements {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 800-px;
+  height: 900px;
+  background-color: #d9d9d9;
+}
+
+.hf-1,
+.hf-2,
+.hf-3,
+.hf-4,
+.hf-5,
+.hf-6 {
+  width: 200px;
+  height: 100px;
 }
 
 .test_menu {
@@ -133,17 +182,44 @@ header.entete {
   display: flex;
   flex-direction: row;
 }
+
+/* -------------------------------FOOTER----------------------------------*/
+
 .pied-de-page {
   display: flex;
   margin-left: 40px;
   margin-right: 40px;
+  width: 100%;
   height: 200px;
   background-color: #d9d9d9;
-  list-style: none;
   flex-direction: row;
 }
 .pg {
   display: flex;
   width: 1400px;
-  list-style: none;
+  justify-content: flex-start;
+}
+.pg1,
+.pg2,
+.pg3 {
+  list-style-type: none;
+}
+.pg1 {
+  margin-left: 40px;
+}
+.pg2 {
+  margin-left: 200px;
+}
+.pg3 {
+  margin-left: 200px;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7 {
+  padding-bottom: 10px;
 }
