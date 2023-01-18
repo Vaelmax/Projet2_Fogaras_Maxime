@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -17,34 +17,25 @@ a {
   color: black;
 }
 
-.entete {
-  position: relative;
-  width: 100%;
-  height: 300px;
+header.entete {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.smenu {
+  display: flex;
+  justify-content: space-between;
 }
 
-.smenu2 {
-position: absolute;
-top: 20px;
-right: 90px;
-}
-
-.smenu1 {
-  position: absolute;
-  top: 20px;
-  right: 230px;
-
-
-}
 .smenu2:hover {
   color: #0065fc;
 }
 
 .smenu1:hover {
   color: #0065fc;
-
 }
-.img, .logo2 {
+.img,
+.logo2 {
   width: 85px;
   height: 25px;
 }
@@ -57,61 +48,102 @@ right: 90px;
   height: 900px;
   background-color: #d9d9d9;
 }
-.hf-1, .hf-2, .hf-3, .hf-4, .hf-5, .hf-6 {
+.hf-1,
+.hf-2,
+.hf-3,
+.hf-4,
+.hf-5,
+.hf-6 {
   width: 200px;
   height: 100px;
 }
 
 .titre1 {
-  position: absolute;
   top: 60px;
 }
 .titre2 {
-  position: absolute;
   top: 100px;
 }
 .barre {
-  position: absolute;
   top: 150px;
 }
-.filtres  {
+.filtres {
   display: flex;
-  position: absolute;
   padding: 0;
   top: 180px;
   width: 1000px;
   height: 200px;
+  align-items: baseline;
+}
+.boutons {
+  width: 800px;
 }
 
 .filtre {
-  position: absolute;
   top: 5px;
   display: flex;
-  width: 500px;
   height: 100px;
   flex-direction: row;
   list-style-type: none;
+  justify-content: space-between;
+}
+.bouton1 {
+  border: 2px solid #d9d9d9;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 18px;
+}
+.bouton2 {
+  border: 2px solid #d9d9d9;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 18px;
+}
+.bouton3 {
+  border: 2px solid #d9d9d9;
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 18px;
+}
+.bouton4 {
+  border: 2px solid #d9d9d9;
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 18px;
+}
+.bouton1:hover,
+.bouton2:hover,
+.bouton3:hover,
+.bouton4:hover {
+  background-color: #deebff;
 }
 
 .formulaire {
-  position: absolute;
   top: 160px;
 }
 
 .test_menu {
-  position: absolute;
   top: 50px;
   width: 800px;
   height: 500px;
   display: flex;
   flex-direction: row;
-  
 }
 .pied-de-page {
-  position: relative;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 200px;
   background-color: #d9d9d9;
   list-style: none;
+  flex-direction: row;
 }
-.pg1 {
+.pg {
+  display: flex;
+  width: 1400px;
   list-style: none;
 }
