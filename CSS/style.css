@@ -63,6 +63,7 @@ header.entete {
 
 .formulaire {
   display: flex;
+  width: 260px;
   top: 160px;
 }
 .barre {
@@ -71,6 +72,7 @@ header.entete {
   margin-left: 5px;
   width: 150px;
   height: 40px;
+  flex-grow: 1;
 }
 .rbouton {
   border: 2px solid white;
@@ -80,6 +82,7 @@ header.entete {
   height: 44px;
   background-color: #0065fc;
   color: white;
+  flex-grow: 1;
 }
 
 /* -------------------------------- MENU FILTRES -----------------------------*/
