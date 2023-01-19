@@ -64,7 +64,7 @@ header.entete {
 
 .formulaire {
   display: flex;
-  width: 260px;
+  width: 360px;
   top: 160px;
 }
 .barre {
@@ -73,7 +73,6 @@ header.entete {
   margin-left: 5px;
   width: 150px;
   height: 40px;
-  flex-grow: 1;
 }
 .rbouton {
   border: 2px solid white;
@@ -83,7 +82,24 @@ header.entete {
   height: 44px;
   background-color: #0065fc;
   color: white;
-  flex-grow: 1;
+}
+.dot {
+  border: 2px solid white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 50px;
+  height: 44px;
+  background-color: #d9d9d9;
+  color: white;
+}
+.dot {
+  display: flex;
+  align-items: center;
+}
+.dot :first-child {
+  color: black;
+  font-size: 18px;
+  padding-left: 15px;
 }
 
 /* -------------------------------- MENU FILTRES -----------------------------*/
