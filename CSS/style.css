@@ -11,6 +11,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 a {
@@ -29,7 +30,6 @@ header.entete {
 .smenu {
   display: flex;
   justify-content: space-between;
-  margin-right: 70px;
 }
 
 .smenu2:hover {
