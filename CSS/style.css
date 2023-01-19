@@ -204,45 +204,84 @@ header.entete {
   width: 30px;
   height: 30px;
   border: 1px solid #d9d9d9;
-  border-radius: 15px;
+  border-radius: 50%;
   color: #0065fc;
   font-size: 18px;
   font-weight: 700;
 }
-/* -------------------------------- SECTION -------------------------------*/
+/* -------------------------------- MAIN -------------------------------*/
 
-.hebergements {
-  position: relative;
+.main {
   display: flex;
   flex-direction: row;
-  width: 800-px;
-  height: 900px;
+  width: 900px;
+  height: 700px;
   background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.title {
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 700px;
+  height: 30px;
+}
+.affichage {
+  margin-left: 30px;
 }
 
-.hf-1,
-.hf-2,
-.hf-3,
-.hf-4,
-.hf-5,
-.hf-6 {
-  width: 200px;
-  height: 100px;
-}
-
-.test_menu {
-  top: 50px;
-  width: 800px;
-  height: 500px;
+/*--------------------------------- CARTE1 -----------------------------*/
+.CARDS {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 235px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  margin-left: 30px;
 }
 
-/* -------------------------------FOOTER----------------------------------*/
+.card_image1 {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: -5px;
+}
+.card_image1_1 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card_body1 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  line-height: 0px;
+}
+.card_footer {
+  display: flex;
+  flex-direction: column;
+}
+.card_nuit1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card_footer1 {
+  display: flex;
+  padding-left: 20px;
+}
+
+/* ------------------------------ FOOTER ----------------------------------*/
 
 .pied-de-page {
   display: flex;
   margin-right: 40px;
+  margin-top: 40px;
   width: 100%;
   height: 200px;
   background-color: #d9d9d9;
