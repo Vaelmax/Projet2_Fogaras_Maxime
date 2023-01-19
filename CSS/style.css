@@ -111,41 +111,45 @@ header.entete {
   display: flex;
   border: 2px solid #d9d9d9;
   width: 150px;
-  height: 35px;
+  height: 45px;
   padding: 7px;
-  border-radius: 18px;
+  border-radius: 22.5px;
   flex-direction: row-reverse;
   padding-right: 15px;
+  align-items: center;
 }
 .bouton2 {
   display: flex;
   border: 2px solid #d9d9d9;
   width: 110px;
-  height: 35px;
+  height: 45px;
   padding: 7px;
-  border-radius: 18px;
+  border-radius: 22.5px;
   flex-direction: row-reverse;
   padding-right: 15px;
+  align-items: center;
 }
 .bouton3 {
   display: flex;
   border: 2px solid #d9d9d9;
   width: 150px;
-  height: 35px;
+  height: 45px;
   padding: 7px;
-  border-radius: 18px;
+  border-radius: 22.5px;
   flex-direction: row-reverse;
   padding-right: 15px;
+  align-items: center;
 }
 .bouton4 {
   display: flex;
   border: 2px solid #d9d9d9;
-  width: 200px;
-  height: 35px;
+  width: 220px;
+  height: 45px;
   padding: 7px;
-  border-radius: 18px;
+  border-radius: 22.5px;
   flex-direction: row-reverse;
   padding-right: 15px;
+  align-items: center;
 }
 .bouton1:hover,
 .bouton2:hover,
@@ -153,9 +157,16 @@ header.entete {
 .bouton4:hover {
   background-color: #deebff;
 }
+.bouton1,
+.bouton2,
+.bouton3,
+.bouton4 {
+  font-weight: 700;
+}
+
 .fa-solid {
   color: #0065fc;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 /* -------------------------------- RESULTATS ------------------------------*/
