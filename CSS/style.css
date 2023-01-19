@@ -10,8 +10,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 a {
@@ -37,7 +35,10 @@ header.entete {
 }
 
 .smenu1 {
-  margin-right: 80px;
+  margin-right: 67px;
+}
+.smenu2 {
+  margin-right: 77px;
 }
 
 .smenu1:hover {
@@ -47,31 +48,33 @@ header.entete {
 .logo2 {
   width: 85px;
   height: 25px;
+  margin-left: 55px;
 }
 
 /* ------------------------------ TITRE 1 et 2 -------------------------------*/
 
 .titre1 {
-  top: 60px;
-  margin-bottom: 10px;
+  margin-top: 63px;
+  margin-left: 55px;
 }
 .titre2 {
-  top: 100px;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-left: 55px;
 }
 
 /* ------------------------------- FORMULAIRE -------------------------------*/
 
 .formulaire {
   display: flex;
-  width: 360px;
-  top: 160px;
+  width: 450px;
+  margin-top: 20px;
+  margin-left: 55px;
 }
 .barre {
   border: 1px solid #d9d9d9;
   text-indent: 10px;
   margin-left: 5px;
-  width: 150px;
+  width: 220px;
   height: 40px;
 }
 .rbouton {
@@ -109,9 +112,11 @@ header.entete {
   display: flex;
   padding: 0;
   top: 180px;
-  width: 1000px;
-  height: 80px;
+  width: 914px;
+  height: 50px;
   align-items: baseline;
+  margin-left: 62px;
+  margin-top: 32px;
 }
 .boutons {
   width: 800px;
@@ -129,9 +134,9 @@ header.entete {
   display: flex;
   border: 2px solid #d9d9d9;
   width: 150px;
-  height: 45px;
+  height: 50px;
   padding: 7px;
-  border-radius: 22.5px;
+  border-radius: 25px;
   flex-direction: row-reverse;
   padding-right: 15px;
   align-items: center;
@@ -140,9 +145,9 @@ header.entete {
   display: flex;
   border: 2px solid #d9d9d9;
   width: 110px;
-  height: 45px;
+  height: 50px;
   padding: 7px;
-  border-radius: 22.5px;
+  border-radius: 25px;
   flex-direction: row-reverse;
   padding-right: 15px;
   align-items: center;
@@ -151,9 +156,9 @@ header.entete {
   display: flex;
   border: 2px solid #d9d9d9;
   width: 150px;
-  height: 45px;
+  height: 50px;
   padding: 7px;
-  border-radius: 22.5px;
+  border-radius: 25px;
   flex-direction: row-reverse;
   padding-right: 15px;
   align-items: center;
@@ -161,12 +166,12 @@ header.entete {
 .bouton4 {
   display: flex;
   border: 2px solid #d9d9d9;
-  width: 220px;
-  height: 45px;
+  width: 226px;
+  height: 50px;
   padding: 7px;
-  border-radius: 22.5px;
+  border-radius: 25px;
   flex-direction: row-reverse;
-  padding-right: 15px;
+  padding-right: 25px;
   align-items: center;
 }
 .bouton1:hover,
@@ -192,9 +197,12 @@ header.entete {
 .resultats {
   display: flex;
   align-items: center;
+  margin-left: 59px;
+  margin-top: 38px;
+  margin-top: 39px;
 }
 .nombre {
-  margin-left: 15px;
+  margin-left: 11px;
 }
 .info {
   display: flex;
@@ -209,15 +217,23 @@ header.entete {
   font-size: 18px;
   font-weight: 700;
 }
+/* -------------------------------- CONTENU ----------------------------*/
+.contenu {
+  display: flex;
+  flex-direction: row;
+}
+
 /* -------------------------------- MAIN -------------------------------*/
 
 .main {
   display: flex;
   flex-direction: row;
-  width: 900px;
-  height: 700px;
+  width: 880px;
+  height: 626px;
   background-color: #d9d9d9;
   border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 39px;
 }
 .title {
   margin-top: 50px;
@@ -230,18 +246,31 @@ header.entete {
 }
 
 /*--------------------------------- CARTE1 -----------------------------*/
+
 .CARDS {
   display: flex;
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 30px;
+  margin-right: 30px;
+}
+
+.card_title1 {
+  width: 204px;
+  height: 15px;
+  font-size: 14px;
+}
+.card_nuit1 {
+  width: 204px;
+  height: 15px;
+  padding-top: 12px;
 }
 .card1 {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 235px;
+  width: 246px;
+  height: 199px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
@@ -269,21 +298,121 @@ header.entete {
 }
 .card_nuit1 {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .card_footer1 {
   display: flex;
   padding-left: 20px;
 }
+.card_footer1 > .fa-solid {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  margin-top: 8px;
+}
+.card_footer1 :last-child {
+  color: #f2f2f2;
+}
+.affichage {
+  width: 150px;
+  height: 21px;
+  margin-left: 44px;
+}
+/* ------------------------------ POPULAIRE -------------------------------*/
 
+.Populaire {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 625px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-top: 39px;
+}
+
+.Pop {
+  display: flex;
+  margin-top: 41px;
+  margin-left: 37px;
+  width: 300px;
+  height: 26px;
+  align-items: ;
+}
+.CARDS2 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin-right: 30px;
+  margin-left: 37px;
+  margin-top: 15px;
+  margin-bottom: 34px;
+}
+.card_title2 {
+  width: 180px;
+  font-size: 14px;
+}
+.card2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 343px;
+  height: 144px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.card_image2 {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.card_image2_2 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.card_body2 {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+.card_title2 {
+  width: 169px;
+  padding-left: 15px;
+}
+.card_nuit2 {
+  padding-left: 15px;
+  margin-top: 0;
+}
+.card_footer2 {
+  position: absolute;
+  bottom: 28px;
+  left: 156px;
+  display: flex;
+  flex-direction: row;
+  width: 68px;
+  height: 12px;
+}
+.card_footer2 > .fa-solid {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  margin-top: 10px;
+  padding-top: 0px;
+}
+.card_footer2 :last-child {
+  color: #f2f2f2;
+}
 /* ------------------------------ FOOTER ----------------------------------*/
 
 .pied-de-page {
   display: flex;
-  margin-right: 40px;
-  margin-top: 40px;
-  width: 100%;
-  height: 200px;
+  margin-right: 53px;
+  margin-top: 60.51px;
+  margin-left: 48px;
+  margin-bottom: 7px;
+  width: 1339px;
+  height: 225px;
   background-color: #d9d9d9;
   flex-direction: row;
 }
