@@ -233,7 +233,7 @@ header.entete {
   flex-direction: row;
   width: 880px;
   height: 626px;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border-radius: 20px;
   margin-left: 50px;
   margin-top: 39px;
@@ -328,7 +328,7 @@ header.entete {
   flex-direction: column;
   width: 420px;
   height: 625px;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   border-radius: 20px;
   margin-left: 40px;
   margin-top: 39px;
@@ -510,7 +510,7 @@ header.entete {
   margin-bottom: 7px;
   width: 1339px;
   height: 225px;
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   flex-direction: row;
 }
 .pg {
