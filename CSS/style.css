@@ -402,6 +402,101 @@ header.entete {
 .card_footer2 :last-child {
   color: #f2f2f2;
 }
+/* ------------------------------ SECTION ---------------------------------*/
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 1337px;
+  height: 550px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 39px;
+  margin-bottom: 61px;
+}
+.Titre1 {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 250px;
+  height: 30px;
+}
+
+.affichage {
+  margin-left: 30px;
+}
+/* ------------------------------ CARD3 -----------------------------------*/
+
+.CARD3 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  row-gap: 30px;
+  margin-left: -30px;
+  margin-top: 0px;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.card_title3 {
+  width: 280px;
+  height: 15px;
+  font-size: 16px;
+}
+.card_nuit3 {
+  width: 204px;
+  height: 15px;
+  padding-top: 12px;
+}
+.card3 {
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+  height: 444px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  margin-left: 30px;
+}
+
+.card_image3 {
+  padding-bottom: -5px;
+}
+.card_image3_3 {
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card_body3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  line-height: 0px;
+}
+.card_footer3 {
+  display: flex;
+  flex-direction: column;
+}
+.card_nuit3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.card_footer3 {
+  display: flex;
+  padding-left: 20px;
+}
+.card_footer3 > .fa-solid {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  margin-top: 8px;
+}
+.card_footer3 :last-child {
+  color: #f2f2f2;
+}
+.affichage {
+  width: 150px;
+  height: 21px;
+  margin-left: 44px;
+}
 /* ------------------------------ FOOTER ----------------------------------*/
 
 .pied-de-page {
