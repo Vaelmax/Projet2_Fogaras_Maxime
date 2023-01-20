@@ -10,6 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  width: 1400px;
 }
 
 a {
@@ -22,12 +23,14 @@ a {
 header.entete {
   display: flex;
   align-items: baseline;
+  width: 1400px;
   justify-content: space-between;
 }
 
 .smenu {
   display: flex;
   justify-content: space-between;
+  margin-right: -60px;
 }
 
 .smenu2:hover {
