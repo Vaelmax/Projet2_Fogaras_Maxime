@@ -10,14 +10,14 @@
     ></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
   </head>
   <body>
     <!---------------------------------- HEADER ----------------------------------->
     <header class="entete">
-      <div class="logo">
         <h1>
           <img
-            class="logo2"
+            class="entete__logo"
             src="images/Images Booki/logo/Booki.png"
             width="61.09"
             height="19"
@@ -25,9 +25,9 @@
           />
         </h1>
       </div>
-      <nav class="smenu">
-        <a class="smenu1" href="#ancre1">Hébergements</a>
-        <a class="smenu2" href="#ancre2">Activités</a>
+      <nav class="entete__menu">
+        <a class="entete__menu1" href="#ancre1">Hébergements</a>
+        <a class="entete__menu2" href="#ancre2">Activités</a>
       </nav>
     </header>
     <!------------------------------- TITRE 1 et 2 --------------------------------->
@@ -35,15 +35,15 @@
     <p class="titre2">En plein centre-ville ou en pleine nature</p>
     <!-------------------------------- FORMULAIRE ---------------------------------->
     <div class="formulaire">
-      <div class="dot"><i class="fa-solid fa-location-dot"></i></div>
-      <form method="post" action="">
+      <div class="formulaire__dot"><i class="fa-solid fa-location-dot"></i></div>
+      <form method="formulaire__post" action="">
         <input
-          class="barre"
-          type="text"
+          class="formulaire__barre"
+          type="formulaire__text"
           id="Rechercher"
           placeholder="Votre ville"
         />
-        <input class="rbouton" type="submit" value="Rechercher" />
+        <input class="formulaire__bouton" type="submit" value="Rechercher" />
       </form>
     </div>
     <!------------------------------- MENU FILTRES --------------------------------->
@@ -83,26 +83,31 @@
 
           <!---------------------------------- CARTE1 -------------------------------->
           <div class="CARDS">
-            <article class="card1">
-              <div class="card_image1">
-                <img
-                  class="card_image1_1"
-                  src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg"
-                  width="236"
-                  height="120"
-                />
-              </div>
-              <div class="card_body1">
-                <span class="card_title1"><h3>Aubèrge La Canebière</h3></span>
-                <p class="card_nuit1">Nuit à partir de 25€</p>
-              </div>
-              <div class="card_footer1">
-                <span class="card_icon1"></span><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i><span class="card_icon2"></span
-                ><i class="fa-solid fa-star"></i>
-              </div>
-            </article>
+            <a href="#">
+              <article class="card1">
+                <div class="card_image1">
+                  <img
+                    class="card_image1_1"
+                    src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg"
+                    width="236"
+                    height="120"
+                  />
+                </div>
+                <div class="card_body1">
+                  <span class="card_title1"><h3>Aubèrge La Canebière</h3></span>
+                  <p class="card_nuit1">Nuit à partir de 25€</p>
+                </div>
+                <div class="card_footer1">
+                  <span class="card_icon1"></span
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><span class="card_icon2"></span
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+              </article>
+            </a>
             <!--------------------------------- CARTE2 ------------------------------->
             <article class="card1">
               <div class="card_image1">
@@ -209,13 +214,15 @@
                 ><i class="fa-solid fa-star"></i>
               </div>
             </article>
-            <h3 class="affichage">Afficher plus</h3>
+          
           </div>
+          <h3  class="affichage">Afficher plus</h3>
         </div>
-      </div>
-      <!------------------------------- CARDPOP -------------------------------->
+        </div>
+      
+      <!------------------------------- CARD POP -------------------------------->
       <div class="Populaire">
-        <div><h2 class="Pop">Les plus populaires</h2></div>
+        <div class="Populaire__header"><h2 class="Pop">Les plus populaires</h2> <i class="iconify" data-icon="fa6-solid:chart-line"></i></div>
         <div class="CARDS2">
           <article class="card2">
             <div class="card_image2">
@@ -287,8 +294,8 @@
     <!------------------------------ SECTION ------------------------------->
 
     <div class="section">
-      <div id="ancre2" class="Titre1">
-        <h2 class="title1">Activités à Marseille</h2>
+      <div id="ancre2" class="Titre1"><h2 class="title1">Activités à Marseille</h2>
+        
       </div>
       <!-------------------------- CARD3 --------------------------------->
 
