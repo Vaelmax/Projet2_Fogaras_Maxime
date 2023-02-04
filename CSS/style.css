@@ -9,8 +9,9 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  width: 1400px;
   max-width: 1400px;
+  width: auto;
+  margin: 0px 55px;
 }
 a {
   text-decoration: none;
@@ -19,26 +20,22 @@ a {
 
 /* -----------------------------------HEADER----------------------------------*/
 
-header.entete {
+.Header_menu {
+  width: 250px;
+}
+.entete {
   display: flex;
   align-items: baseline;
-  width: 1400px;
   justify-content: space-between;
 }
 .entete__menu {
   display: flex;
   justify-content: space-between;
-  margin-right: -60px;
 }
 .entete__menu2:hover {
   color: #0065fc;
 }
-.entete__menu1 {
-  margin-right: 67px;
-}
-.entete__menu2 {
-  margin-right: 77px;
-}
+
 .entete__menu1:hover {
   color: #0065fc;
 }
@@ -46,18 +43,19 @@ header.entete {
 .entete__logo {
   width: 85px;
   height: 25px;
-  margin-left: 55px;
 }
 
 /* ------------------------------ TITRE 1 et 2 -------------------------------*/
-
+.Titres {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+}
 .titre1 {
-  margin-top: 63px;
-  margin-left: 55px;
+  margin: 0px;
 }
 .titre2 {
-  margin-top: 8px;
-  margin-left: 55px;
+  margin: 8px 0px 0px 0px;
 }
 
 /* ------------------------------- FORMULAIRE -------------------------------*/
@@ -66,7 +64,6 @@ header.entete {
   display: flex;
   width: 450px;
   margin-top: 20px;
-  margin-left: 55px;
 }
 .formulaire__barre {
   border: 1px solid #d9d9d9;
@@ -90,36 +87,26 @@ header.entete {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   width: 50px;
-  height: 44px;
   background-color: #d9d9d9;
-  color: white;
   display: flex;
   align-items: center;
   margin-right: -7px;
+  justify-content: space-around;
 }
-.formulaire__dot :first-child {
+.localisation {
   color: black;
-  font-size: 18px;
-  padding-left: 18px;
 }
-
 /* -------------------------------- MENU FILTRES -----------------------------*/
 .filtres {
   display: flex;
-  padding: 0;
-  width: 914px;
-  height: 50px;
   align-items: baseline;
-  margin-left: 62px;
   margin-top: 32px;
 }
 .boutons {
   width: 800px;
 }
 .filtre {
-  top: 5px;
   display: flex;
-  height: 100px;
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
@@ -179,10 +166,13 @@ header.entete {
 .bouton3,
 .bouton4 {
   font-weight: 700;
+  justify-content: space-around;
 }
-.fa-solid {
+.Bill,
+.Man,
+.Heart,
+.Dog {
   color: #0065fc;
-  padding-right: 10px;
 }
 
 /* -------------------------------- RESULTATS ------------------------------*/
@@ -190,8 +180,6 @@ header.entete {
 .resultats {
   display: flex;
   align-items: center;
-  margin-left: 59px;
-
   margin-top: 39px;
 }
 .nombre {
@@ -214,19 +202,17 @@ header.entete {
 .contenu {
   display: flex;
   flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+  margin-top: 39px;
 }
 
 /* -------------------------------- MAIN -------------------------------*/
 
 .main {
-  display: flex;
-  flex-direction: row;
   width: 880px;
-  height: 626px;
-  background-color: #f2f2f2;
+  background-color: #d9d9d9;
   border-radius: 20px;
-  margin-left: 50px;
-  margin-top: 39px;
 }
 .title {
   margin-top: 50px;
@@ -236,39 +222,35 @@ header.entete {
 }
 .affichage {
   margin-top: 40px;
+  margin-left: 44px;
 }
 
 /*--------------------------------- CARTE1 -----------------------------*/
 
 .CARDS {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 31px;
   margin-right: 40px;
   margin-left: 40px;
+}
+.CARDS_p1 {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
-
-.card_title1 {
-  width: 204px;
-  height: 15px;
-  font-size: 14px;
-}
-.card_nuit1 {
-  width: 204px;
-  height: 15px;
-  padding-top: 12px;
+.CARDS_p2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 .card1 {
   display: flex;
   flex-direction: column;
   width: 246px;
-  height: 199px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
 }
-
 .card_image1 {
   padding-left: 5px;
   padding-top: 5px;
@@ -279,82 +261,66 @@ header.entete {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.card_title1 {
+  margin: 0px;
+}
 .card_body1 {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  line-height: 0px;
-}
-.card_footer {
-  display: flex;
-  flex-direction: column;
-}
-.card_nuit1 {
-  margin-top: 10px;
-  margin-bottom: 0px;
 }
 .card_footer1 {
   display: flex;
   padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
-.card_footer1 > .fa-solid {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
-  margin-top: 8px;
+.card_title1 {
+  padding-top: 10px;
 }
-.card_footer1 :last-child {
-  color: #f2f2f2;
+.star1 {
+  color: #0065fc;
 }
-.affichage {
-  width: 150px;
-  height: 21px;
-  margin-left: 44px;
+.star2 {
+  color: #d9d9d9;
 }
+
 /* ------------------------------ POPULAIRE -------------------------------*/
 
 .Populaire {
   display: flex;
   flex-direction: column;
   width: 420px;
-  height: 625px;
-  background-color: #f2f2f2;
+  background-color: #d9d9d9;
   border-radius: 20px;
-  margin-left: 40px;
-  margin-top: 39px;
 }
 .Populaire__header {
   display: flex;
   align-items: baseline;
+  justify-content: space-evenly;
 }
-.iconify {
+.chartline {
   color: #0065fc;
 }
 .Pop {
   display: flex;
   margin-top: 41px;
-  margin-left: 37px;
+  margin-left: 10px;
   width: 300px;
   height: 26px;
 }
 .CARDS2 {
   display: flex;
-
   flex-wrap: wrap;
   row-gap: 30px;
   justify-content: space-evenly;
   margin-top: 15px;
 }
-.card_title2 {
-  width: 180px;
-  font-size: 14px;
-}
 .card2 {
-  position: relative;
   display: flex;
   flex-direction: row;
   width: 343px;
-  height: 144px;
+  height: 154px;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -369,46 +335,39 @@ header.entete {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
-.card_body2 {
+.body_footer {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  padding-left: 20px;
 }
 .card_title2 {
-  width: 169px;
-  padding-left: 15px;
+  margin-bottom: 10px;
 }
 .card_nuit2 {
-  padding-left: 15px;
   margin-top: 0;
 }
 .card_footer2 {
-  position: absolute;
-  bottom: 28px;
-  left: 156px;
-  display: flex;
-  flex-direction: row;
-  width: 68px;
-  height: 12px;
+  margin-top: 35px;
 }
-.card_footer2 > .fa-solid {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
-  margin-top: 10px;
-  padding-top: 0px;
+.card_footer3 {
+  margin-top: 20px;
 }
-.card_footer2 :last-child {
-  color: #f2f2f2;
+.card_footer4 {
+  margin-top: 40px;
+}
+.star3 {
+  color: #0065fc;
+}
+.star4 {
+  color: #d9d9d9;
 }
 /* ------------------------------ SECTION ---------------------------------*/
 .section {
   display: flex;
   flex-direction: column;
-  width: 1337px;
-  height: 550px;
+  max-width: 1400px;
+  width: auto;
   border-radius: 20px;
-  margin-left: 50px;
   margin-top: 39px;
   justify-content: space-between;
 }
@@ -419,44 +378,20 @@ header.entete {
   height: 30px;
 }
 
-.affichage {
-  margin-left: 30px;
-}
 /* ------------------------------ CARD3 -----------------------------------*/
 
 .CARD3 {
   display: flex;
-  flex-wrap: wrap;
-  height: 450px;
   row-gap: 30px;
-  margin-left: -30px;
   margin-top: 0px;
   justify-content: space-between;
-}
-
-.card_title3 {
-  width: 280px;
-  height: 15px;
-  font-size: 16px;
-}
-.card_nuit3 {
-  width: 204px;
-  height: 15px;
-  padding-top: 12px;
 }
 .card3 {
   display: flex;
   flex-direction: column;
-  width: 302px;
-  height: 444px;
   background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   border-radius: 25px;
-  margin-left: 30px;
-}
-
-.card_image3 {
-  padding-bottom: -5px;
 }
 .card_image3_3 {
   object-fit: cover;
@@ -464,54 +399,25 @@ header.entete {
   border-top-right-radius: 20px;
 }
 .card_body3 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  line-height: 0px;
-}
-.card_footer3 {
-  display: flex;
-  flex-direction: column;
-}
-.card_nuit3 {
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-.card_footer3 {
-  display: flex;
-  padding-left: 20px;
-}
-.card_footer3 > .fa-solid {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
-  margin-top: 8px;
-}
-.card_footer3 :last-child {
-  color: #f2f2f2;
-}
-.affichage {
-  width: 150px;
-  height: 21px;
-  margin-left: 44px;
+  font-size: 14px;
+  margin: auto auto auto 20px;
 }
 /* ------------------------------ FOOTER ----------------------------------*/
 
 .pied-de-page {
   display: flex;
-  margin-right: 53px;
   margin-top: 60.51px;
-  margin-left: 48px;
   margin-bottom: 7px;
-  width: 1339px;
+  max-width: 1400px;
+  width: auto;
   height: 225px;
-  background-color: #f2f2f2;
+  background-color: #d9d9d9;
   flex-direction: row;
 }
 .pg {
   display: flex;
-  width: 1400px;
-  justify-content: flex-start;
+  max-width: 1400px;
+  width: auto;
 }
 .pg1,
 .pg2,
@@ -536,4 +442,27 @@ header.entete {
 .p6,
 .p7 {
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .contenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .Populaire {
+    width: 100%;
+    margin-top: 53px;
+  }
+  .Populiare_header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .CARDS2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .cards2 {
+    width: 252px;
+  }
 }
