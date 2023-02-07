@@ -10,8 +10,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   max-width: 1400px;
-  width: auto;
-  margin: 0px 55px;
+  margin: 0px auto;
+  padding: 0 55px;
 }
 a {
   text-decoration: none;
@@ -210,9 +210,9 @@ a {
 /* -------------------------------- MAIN -------------------------------*/
 
 .main {
-  width: 880px;
   background-color: #d9d9d9;
   border-radius: 20px;
+  gap: 40px;
 }
 .title {
   margin-top: 50px;
@@ -290,7 +290,6 @@ a {
 .Populaire {
   display: flex;
   flex-direction: column;
-  width: 420px;
   background-color: #d9d9d9;
   border-radius: 20px;
 }
@@ -366,7 +365,6 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 1400px;
-  width: auto;
   border-radius: 20px;
   margin-top: 39px;
   justify-content: space-between;
@@ -409,7 +407,6 @@ a {
   margin-top: 60.51px;
   margin-bottom: 7px;
   max-width: 1400px;
-  width: auto;
   height: 225px;
   background-color: #d9d9d9;
   flex-direction: row;
@@ -417,7 +414,6 @@ a {
 .pg {
   display: flex;
   max-width: 1400px;
-  width: auto;
 }
 .pg1,
 .pg2,
@@ -444,25 +440,119 @@ a {
   padding-bottom: 10px;
 }
 
+/* ------------------------RESPONSIVE TABLETTE ------------------*/
+
 @media screen and (max-width: 992px) {
+  .body {
+    max-width: 992px;
+    margin: 0px auto;
+    padding: 0 55px;
+  }
   .contenu {
     display: flex;
     flex-direction: column;
+    max-width: 883px;
   }
   .Populaire {
-    width: 100%;
     margin-top: 53px;
+    height: 278px;
   }
-  .Populiare_header {
+  .Populaire__header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    margin: 0;
+  }
+  .Pop {
+    margin: 34px auto 26px 40px;
   }
   .CARDS2 {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
   }
-  .cards2 {
-    width: 252px;
+  .chartline {
+    margin: 39px 40px auto auto;
+  }
+  .card2 {
+    max-width: 252px;
+    height: 144px;
+  }
+  .card_image2_2 {
+    max-width: 106px;
+    max-height: 134px;
+  }
+  .body_footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+  .card_footer2 {
+    margin-top: 45px;
+  }
+  .card_footer3 {
+    margin-top: 30px;
+  }
+  .card_footer4 {
+    margin-top: 30px;
+  }
+  .section {
+    max-width: 878px;
+    height: 331px;
+  }
+  .CARDS3 {
+    width: 878px;
+  }
+  .card3 {
+    width: 182px;
+    height: 267px;
+  }
+  .card_image3_3 {
+    width: 182px;
+    height: 206px;
+  }
+  .card_body3 {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    margin: 0;
+    width: 182px;
+    height: 56px;
+  }
+  .card_body3 > h3 {
+    margin: 0;
+  }
+  .footer {
+    max-width: 880px;
+  }
+  .pg {
+    max-width: 880px;
+  }
+  .pg1 {
+    max-width: 185px;
+  }
+  .pg2 {
+    max-width: 175px;
+  }
+  .pg3 {
+    max-width: 140px;
+  }
+  .pg1,
+  .pg2,
+  .pg3 {
+    margin: 30px auto auto 70px;
+    padding: 0;
+  }
+}
+
+/* ----------------------RESPONDIVE MOBILE --------------------*/
+
+@media screen and (max-width: 768px) {
+  .body {
+    max-width: 768px;
+    margin: 0px auto;
+    padding: 0;
   }
 }
