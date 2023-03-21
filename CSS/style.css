@@ -1,3 +1,6 @@
+@import "cartes-populaires.css";
+@import "header.css";
+
 /*** Fix ***/
 *,
 *::before,
@@ -10,7 +13,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   max-width: 1450px;
-  margin: 0px;
+  margin: auto;
   padding: 0 50px;
 }
 a {
@@ -19,53 +22,6 @@ a {
 }
 
 /* -----------------------------------HEADER----------------------------------*/
-
-.Header_menu {
-  width: 250px;
-}
-.entete {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.entete__menu1 {
-  border-top: solid 2px;
-  border-color: white;
-  width: 140px;
-  height: 90px;
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.entete__menu2 {
-  border-top: solid 2px;
-  border-color: white;
-  width: 110px;
-  height: 90px;
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.entete__menu {
-  display: flex;
-  justify-content: space-between;
-}
-.entete__menu2:hover {
-  color: #0065fc;
-  border-color: #0065fc;
-}
-
-.entete__menu1:hover {
-  color: #0065fc;
-  border-color: #0065fc;
-}
-.img,
-.entete__logo {
-  width: 85px;
-  height: 25px;
-}
 
 /* ------------------------------ TITRE 1 et 2 -------------------------------*/
 .Titres {
@@ -79,12 +35,19 @@ a {
 .titre2 {
   margin: 8px 0px 0px 0px;
 }
+@media screen and (max-width: 767px) {
+  .titre1,
+  .titre2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
 
 /* ------------------------------- FORMULAIRE -------------------------------*/
 
 .formulaire {
   display: flex;
-  width: 450px;
   margin-top: 20px;
 }
 .formulaire__barre {
@@ -115,9 +78,46 @@ a {
   margin-right: -7px;
   justify-content: space-around;
 }
-
 .localisation {
   color: black;
+}
+@media screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .formulaire {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .formulaire__bouton {
+    border: 2px solid white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50px;
+    height: 44px;
+    background-color: #0065fc;
+    color: white;
+    margin-left: -6px;
+  }
+  .formulaire__dot {
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 44px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    margin-right: -7px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .only-mobile {
+    display: none;
+  }
 }
 /* -------------------------------- MENU FILTRES -----------------------------*/
 .filtres {
@@ -125,14 +125,13 @@ a {
   align-items: baseline;
   margin-top: 32px;
 }
-.boutons {
-  width: 800px;
-}
+
 .filtre {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .bouton1 {
   display: flex;
@@ -197,6 +196,32 @@ a {
 .Dog {
   color: #0065fc;
 }
+@media screen and (max-width: 767px) {
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .boutons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .filtre {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+  .bouton1,
+  .bouton2 {
+    width: 48%;
+  }
+  .bouton3,
+  .bouton4 {
+    width: 48%;
+  }
+}
 
 /* -------------------------------- RESULTATS ------------------------------*/
 
@@ -230,6 +255,21 @@ a {
   margin-top: 39px;
   gap: 40px;
 }
+@media screen and (max-width: 992px) {
+  .contenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    flex-basis: 626px;
+    max-width: 880px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cartes--heb {
+  }
+}
 
 /* -------------------------------- MAIN -------------------------------*/
 
@@ -254,16 +294,31 @@ a {
   margin-left: 44px;
 }
 
-/*--------------------------------- CARTE1 -----------------------------*/
+/*--------------------------------- STAR -----------------------------*/
 
-.CARDS {
+.star--full {
+  color: rgb(0, 89, 255);
+}
+.star--empty {
+  color: #d9d9d9;
+}
+
+/*--------------------------------- CARTE HEBERGEMENT -----------------------------*/
+.carte--heb__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  gap: 7px;
+}
+.cartes--heb {
   margin: 0 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 31px;
 }
-.carte {
+.carte--heb {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -275,31 +330,26 @@ a {
   background-color: white;
 }
 
-.carte__pic {
+.carte--heb__pic {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   padding: 3px 3px 0 3px;
   max-height: 120px;
 }
-.carte__header h3 {
+.carte--heb__header h3 {
   margin: 0;
 }
-.carte__body p {
+.carte--heb__body p {
   margin: 0;
 }
-.carte__footer {
+.carte--heb__footer {
   margin: 0;
+  display: flex;
 }
-.carte__header,
-.carte__body,
-.carte__footer {
+.carte--heb__header,
+.carte--heb__body,
+.carte--heb__footer {
   padding-left: 10px;
-}
-.full__star {
-  color: rgb(0, 89, 255);
-}
-.empty__star {
-  color: #d9d9d9;
 }
 
 /* ------------------------------ POPULAIRE -------------------------------*/
@@ -326,43 +376,9 @@ a {
   width: 300px;
   height: 26px;
 }
-.cartes__pop {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 40px 34px 37px;
-  gap: 33px;
-}
-.carte__pop {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  border: 2px solid white;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  width: 343px;
-  height: 144px;
-}
-.carte__pic__pop {
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
-  padding: 3px 0 3px 3px;
-  max-width: 137px;
-  object-fit: cover;
-}
-.article__pop {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0 0 0 10px;
-  justify-content: space-around;
-}
-.carte__header__pop h3 {
-  margin: 0 5px 0 0;
-}
-.carte__body__pop p {
-  margin: 0;
-}
+
+/* ------------------------------ CARTES POPULAIRE -------------------------------*/
+
 /* ------------------------------ SECTION ---------------------------------*/
 .section {
   display: flex;
@@ -388,21 +404,20 @@ a {
   height: 30px;
 }
 
-/* ------------------------------ CARD3 -----------------------------------*/
+/* ------------------------------ CARTE ACTIVITE -----------------------------------*/
 
-.carte__act {
+.carte--act {
   margin: 0;
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 2px solid white;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   flex-basis: 302px;
   min-width: 182px;
   min-height: 267px;
 }
-.carte__pic__act {
+.carte--act__pic {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   flex-basis: 389px;
@@ -410,17 +425,25 @@ a {
   width: 100%;
   object-fit: cover;
 }
-.carte__header__act h3 {
+.carte--act__header h3 {
   font-size: 16px;
   margin: 15px 0 10px 10px;
 }
+@media screen and (max-width: 767px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__carte {
+    display: flex;
+    flex-direction: column;
+  }
+  .carte--act {
+    display: flex;
+    width: 100%;
+  }
+}
 
-.full__star {
-  color: rgb(0, 89, 255);
-}
-.empty__star {
-  color: grey;
-}
 /* ------------------------------ FOOTER ----------------------------------*/
 .footer {
   margin: 61px 0 0 0;
@@ -440,6 +463,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-basis: 25%;
+  flex-grow: 1;
   margin: 10px auto auto 60px;
 }
 .propos,
@@ -457,6 +482,12 @@ a {
 .assistance a {
   margin: 8px 0 8px 0;
 }
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    margin-top: 800px;
+  }
+}
 
 /* ------------------------RESPONSIVE TABLETTE ------------------*/
 
@@ -465,21 +496,6 @@ a {
     max-width: 992px;
     margin: 0px auto;
     padding: 0 55px;
-  }
-
-  /* ---------------------------------- CONTENU -----------------------*/
-
-  .contenu {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* ----------------------------------- MAIN ----------------------------*/
-
-  .main {
-    flex-basis: 626px;
-    max-width: 880px;
-    height: 100%;
   }
 
   /* --------------------------------- POPULAIRE ------------------------*/
@@ -500,7 +516,7 @@ a {
   .Pop {
     margin: 34px auto 26px 30px;
   }
-  .cartes__pop {
+  .cartes--pop {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -512,11 +528,11 @@ a {
   .chartline {
     margin: 39px 40px auto auto;
   }
-  .carte__pop {
+  .carte--pop {
     max-width: 252px;
     height: 144px;
   }
-  .carte__pic__pop {
+  .carte--pop__pic {
     max-width: 106px;
     max-height: 144px;
   }
@@ -535,10 +551,10 @@ a {
     min-width: 668px;
     gap: 25px;
   }
-  .carte__act {
+  .carte--act {
     min-width: 140px;
   }
-  .carte__pic__act {
+  .carte--act__pic {
     min-height: 84px;
   }
 

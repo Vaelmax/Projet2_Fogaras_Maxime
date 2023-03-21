@@ -42,23 +42,25 @@
       <p class="titre2">En plein centre-ville ou en pleine nature</p>
     </div>
     <!-------------------------------- FORMULAIRE ---------------------------------->
-    <div class="formulaire">
-      <div class="formulaire__dot">
+    <form method="get" action="#" class="formulaire">
+      <label class="formulaire__dot" for="location-search">
         <i class="iconify localisation" data-icon="fa6-solid:location-dot"></i>
-      </div>
-      <form method="post" action="#">
-        <input
-          class="formulaire__barre"
-          type="search"
-          id="Rechercher"
-          placeholder="Votre ville"
-        />
-        <button class="formulaire__bouton" type="submit">
-          <span>Rechercher</span
-          ><i class="iconify" data-icon="fa6-solid:magnifying-glass"></i>
-        </button>
-      </form>
-    </div>
+      </label>
+      <input
+        class="formulaire__barre"
+        type="search"
+        id="location-search"
+        placeholder="Votre ville"
+        name="location_search"
+      />
+      <button class="formulaire__bouton" type="submit">
+        <span class="hide-on-mobile">Rechercher</span>
+        <i
+          class="iconify only-mobile"
+          data-icon="fa6-solid:magnifying-glass"
+        ></i>
+      </button>
+    </form>
     <!------------------------------- MENU FILTRES --------------------------------->
     <div class="filtres">
       <h3>Filtres</h3>
@@ -98,107 +100,125 @@
         <div id="ancre1" class="Titre">
           <h2 class="title">Hébergements à Marseille</h2>
 
-          <!---------------------------------- CARTE1 -------------------------------->
-          <div class="CARDS">
-            <figure class="carte">
+          <!------------------------------ CARTE HEBERGEMENT -------------------------------->
+          <div class="cartes--heb">
+            <figure class="carte--heb">
               <img
-                class="carte__pic"
-                src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg"
-                alt="hotel"
-              />
-              <div class="carte__header"><h3>Auberge La Cannebière</h3></div>
-              <div class="carte__body"><p>Nuit à partir de 25€</p></div>
-              <div class="carte__footer">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
-              </div>
-            </figure>
-            <!--------------------------------- CARTE2 ------------------------------->
-            <figure class="carte">
-              <img
-                class="carte__pic"
+                class="carte--heb__pic"
                 src="images/Images Booki/hebergements/4_small/hotel_du_port.jpg"
                 alt="hotel"
               />
-              <div class="carte__header"><h3>Hôtel du port</h3></div>
-              <div class="carte__body"><p>Nuit à partir de 52€</p></div>
-              <div class="carte__footer">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
+              <div class="carte--heb__content">
+                <div class="carte--heb__header">
+                  <h3>Hôtel du port</h3>
+                </div>
+                <div class="carte--heb__body"><p>Nuit à partir de 52€</p></div>
+                <div class="carte--heb__footer">
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--empty"></i>
+                </div>
               </div>
             </figure>
-            <!------------------------------- CARTE3 --------------------------------->
-            <figure class="carte">
+            <!--------------------------------- CARTE2 ------------------------------->
+            <figure class="carte--heb">
               <img
-                class="carte__pic"
-                src="images/Images Booki/hebergements/4_small/hotel_les_mouettes.jpg"
-                alt="hotel"
-              />
-              <div class="carte__header"><h3>Hôtel les mouettes</h3></div>
-              <div class="carte__body"><p>Nuit à partir de 76€</p></div>
-              <div class="carte__footer">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
-              </div>
-            </figure>
-            <!------------------------------- CARTE4 --------------------------------->
-            <figure class="carte">
-              <img
-                class="carte__pic"
-                src="images/Images Booki/hebergements/4_small/hotel_de_la_mer.jpg"
-                alt="hotel"
-              />
-              <div class="carte__header"><h3>Hôtel de la mer</h3></div>
-              <div class="carte__body"><p>Nuit à partir de 46€</p></div>
-              <div class="carte__footer">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
-              </div>
-            </figure>
-            <!------------------------------- CARTE5 --------------------------------->
-            <figure class="carte">
-              <img
-                class="carte__pic"
-                src="images/Images Booki/hebergements/4_small/auberge_le_panier.jpg"
-                alt="hotel"
-              />
-              <div class="carte__header"><h3>Auberge Le Panier</h3></div>
-              <div class="carte__body"><p>Nuit à partir de 23€</p></div>
-              <div class="carte__footer">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
-              </div>
-            </figure>
-            <!------------------------------- CARTE6 --------------------------------->
-            <figure class="carte">
-              <img
-                class="carte__pic"
+                class="carte--heb__pic"
                 src="images/Images Booki/hebergements/4_small/hotel_chez_amina.jpg"
                 alt="hotel"
               />
-              <div class="carte__header"><h3>Hôtel Chez Amina</h3></div>
-              <div class="carte__body"><p>Nuit à partir de 96€</p></div>
-              <div class="carte__footer">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
+              <div class="carte--heb__content">
+                <div class="carte--heb__header"><h3>Hôtel Chez Amina</h3></div>
+                <div class="carte--heb__body"><p>Nuit à partir de 96€</p></div>
+                <div class="carte--heb__footer">
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--empty"></i>
+                </div>
+              </div>
+            </figure>
+            <!------------------------------- CARTE3 --------------------------------->
+            <figure class="carte--heb">
+              <img
+                class="carte--heb__pic"
+                src="images/Images Booki/hebergements/4_small/hotel_les_mouettes.jpg"
+                alt="hotel"
+              />
+              <div class="carte--heb__content">
+                <div class="carte--heb__header">
+                  <h3>Hôtel les mouettes</h3>
+                </div>
+                <div class="carte--heb__body"><p>Nuit à partir de 76€</p></div>
+                <div class="carte--heb__footer">
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--empty"></i>
+                </div>
+              </div>
+            </figure>
+            <!------------------------------- CARTE4 --------------------------------->
+            <figure class="carte--heb">
+              <img
+                class="carte--heb__pic"
+                src="images/Images Booki/hebergements/4_small/hotel_de_la_mer.jpg"
+                alt="hotel"
+              />
+              <div class="carte--heb__content">
+                <div class="carte--heb__header"><h3>Hôtel de la mer</h3></div>
+                <div class="carte--heb__body"><p>Nuit à partir de 46€</p></div>
+                <div class="carte--heb__footer">
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--empty"></i>
+                </div>
+              </div>
+            </figure>
+            <!------------------------------- CARTE5 --------------------------------->
+            <figure class="carte carte--heb">
+              <img
+                class="carte--heb__pic"
+                src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg"
+                alt="hotel"
+              />
+              <div class="carte--heb__content">
+                <div class="carte--heb__header">
+                  <h3>Auberge La Cannebière</h3>
+                </div>
+                <div class="carte--heb__body"><p>Nuit à partir de 25€</p></div>
+                <div class="carte--heb__footer">
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--empty"></i>
+                </div>
+              </div>
+            </figure>
+            <!------------------------------- CARTE6 --------------------------------->
+            <figure class="carte--heb">
+              <img
+                class="carte--heb__pic"
+                src="images/Images Booki/hebergements/4_small/auberge_le_panier.jpg"
+                alt="hotel"
+              />
+              <div class="carte--heb__content">
+                <div class="carte--heb__header"><h3>Auberge Le Panier</h3></div>
+                <div class="carte--heb__body"><p>Nuit à partir de 23€</p></div>
+                <div class="carte--heb__footer">
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--full"></i>
+                  <i class="fa-solid fa-star star--empty"></i>
+                </div>
               </div>
             </figure>
           </div>
@@ -212,64 +232,64 @@
           <h2 class="Pop">Les plus populaires</h2>
           <i class="iconify chartline" data-icon="fa6-solid:chart-line"></i>
         </div>
-        <div class="cartes__pop">
-          <figure class="carte__pop">
+        <div class="cartes--pop">
+          <figure class="carte--pop">
             <img
-              class="carte__pic__pop"
+              class="carte--pop__pic"
               src="images/Images Booki/hebergements/4_small/hotel_le_soleil_du_matin.jpg"
               alt="hotel"
             />
-            <div class="article__pop">
-              <div class="carte__header__pop">
+            <div class="carte--pop__content">
+              <div class="carte--pop__header">
                 <h3>Hotel le hotel le soleil du matin</h3>
               </div>
-              <div class="carte__body__pop"><p>Nuit à partir de 128€</p></div>
-              <div class="carte__footer__pop">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
+              <div class="carte--pop__body"><p>Nuit à partir de 128€</p></div>
+              <div class="carte--pop__footer">
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--empty"></i>
               </div>
             </div>
           </figure>
 
-          <figure class="carte__pop">
+          <figure class="carte--pop">
             <img
-              class="carte__pic__pop"
+              class="carte--pop__pic"
               src="images/Images Booki/hebergements/4_small/chambre_hotes_au_coeur_de_eau.jpg"
               alt="hotel"
             />
-            <div class="article__pop">
-              <div class="carte__header__pop">
+            <div class="carte--pop__content">
+              <div class="carte--pop__header">
                 <h3>Chambre d'hôtes au coeur de l'eau</h3>
               </div>
-              <div class="carte__body__pop"><p>Nuit à partir de 71€</p></div>
-              <div class="carte__footer__pop">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
+              <div class="carte--pop__body"><p>Nuit à partir de 71€</p></div>
+              <div class="carte--pop__footer">
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--empty"></i>
               </div>
             </div>
           </figure>
 
-          <figure class="carte__pop">
+          <figure class="carte--pop">
             <img
-              class="carte__pic__pop"
+              class="carte--pop__pic"
               src="images/Images Booki/hebergements/4_small/hotel_bleu_et_blanc.jpg"
               alt="hotel"
             />
-            <div class="article__pop">
-              <div class="carte__header__pop"><h3>Hotel Bleu et Blanc</h3></div>
-              <div class="carte__body__pop"><p>Nuit à partir de 68€</p></div>
-              <div class="carte__footer__pop">
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star full__star"></i>
-                <i class="fa-solid fa-star empty__star"></i>
+            <div class="carte--pop__content">
+              <div class="carte--pop__header"><h3>Hotel Bleu et Blanc</h3></div>
+              <div class="carte--pop__body"><p>Nuit à partir de 68€</p></div>
+              <div class="carte--pop__footer">
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--full"></i>
+                <i class="fa-solid fa-star star--empty"></i>
               </div>
             </div>
           </figure>
@@ -285,42 +305,42 @@
       </div>
       <!-------------------------- CARD3 --------------------------------->
       <div class="section__carte">
-        <figure class="carte__act">
+        <figure class="carte--act">
           <img
-            class="carte__pic__act"
+            class="carte--act__pic"
             src="images/Images Booki/activites/3_medium/vieux_port.jpg"
             alt="hotel"
           />
-          <div class="carte__header__act"><h3>Hotel du Port</h3></div>
+          <div class="carte--act__header"><h3>Hotel du Port</h3></div>
         </figure>
 
-        <figure class="carte__act">
+        <figure class="carte--act">
           <img
-            class="carte__pic__act"
+            class="carte--act__pic"
             src="images/Images Booki/activites/3_medium/fort_de_pomegues.jpg"
             alt="hotel"
           />
-          <div class="carte__header__act"><h3>Fort de Pomègues</h3></div>
+          <div class="carte--act__header"><h3>Fort de Pomègues</h3></div>
         </figure>
 
-        <figure class="carte__act">
+        <figure class="carte--act">
           <img
-            class="carte__pic__act"
+            class="carte--act__pic"
             src="images/Images Booki/activites/3_medium/parc_nationnal.jpg"
             alt="hotel"
           />
-          <div class="carte__header__act">
+          <div class="carte--act__header">
             <h3>Parc nationnal des Calanques</h3>
           </div>
         </figure>
 
-        <figure class="carte__act">
+        <figure class="carte--act">
           <img
-            class="carte__pic__act"
+            class="carte--act__pic"
             src="images/Images Booki/activites/3_medium/notre_dame.jpg"
             alt="hotel"
           />
-          <div class="carte__header__act"><h3>Notre-Dame-de-la-Garde</h3></div>
+          <div class="carte--act__header"><h3>Notre-Dame-de-la-Garde</h3></div>
         </figure>
       </div>
     </div>
