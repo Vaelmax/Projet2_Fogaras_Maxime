@@ -212,14 +212,19 @@ a {
     flex-direction: row;
     width: 100%;
     padding: 0;
+    gap: 10px;
   }
+
   .bouton1,
-  .bouton2 {
-    width: 48%;
-  }
+  .bouton2,
   .bouton3,
   .bouton4 {
     width: 48%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 13px;
   }
 }
 
@@ -391,9 +396,6 @@ a {
 .section__carte {
   display: flex;
   flex-direction: row;
-  flex-basis: 880px;
-  max-height: 445px;
-  min-height: 267px;
   gap: 43px;
   justify-content: space-evenly;
 }
@@ -441,6 +443,10 @@ a {
   .carte--act {
     display: flex;
     width: 100%;
+    flex-basis: 190px;
+  }
+  .carte--act__header {
+    display: flex;
   }
 }
 
@@ -453,7 +459,6 @@ a {
   margin-top: 60px;
   margin-bottom: 7px;
   max-width: 1400px;
-  height: 225px;
   background: #d9d9d9;
   flex-direction: row;
 }
@@ -485,7 +490,10 @@ a {
 @media screen and (max-width: 767px) {
   .footer {
     display: flex;
-    margin-top: 800px;
+  }
+  .pied-de-page {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -542,13 +550,9 @@ a {
   .section {
     display: flex;
     max-width: 880px;
-    min-width: 668px;
-    height: 331px;
   }
   .section__carte {
     display: flex;
-    flex-basis: 880px;
-    min-width: 668px;
     gap: 25px;
   }
   .carte--act {
