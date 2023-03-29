@@ -20,6 +20,11 @@ a {
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width: 767px) {
+  .body {
+    padding: 0 50px;
+  }
+}
 
 /* -----------------------------------HEADER----------------------------------*/
 
@@ -104,13 +109,29 @@ a {
     border: 2px solid white;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 50px;
-    height: 44px;
     background-color: #d9d9d9;
     display: flex;
+    flex-shrink: 0;
+    padding: 12px;
     align-items: center;
     margin-right: -7px;
     justify-content: space-around;
+  }
+  .formulaire__barre {
+    border: 1px solid #d9d9d9;
+    text-indent: 10px;
+    margin-left: 5px;
+    flex-grow: 1;
+  }
+  .formulaire__bouton {
+    border: 2px solid white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-shrink: 0;
+    padding: 12px;
+    background-color: #0065fc;
+    color: white;
+    margin-left: -6px;
   }
 }
 
@@ -272,7 +293,9 @@ a {
   }
 }
 @media screen and (max-width: 767px) {
-  .cartes--heb {
+  .contenu {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -297,6 +320,18 @@ a {
 .affichage {
   margin-top: 40px;
   margin-left: 44px;
+}
+@media screen and (max-width: 767px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -50px;
+  }
+  .Populaire {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -50px;
+  }
 }
 
 /*--------------------------------- STAR -----------------------------*/
@@ -357,6 +392,28 @@ a {
   padding-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .cartes--heb {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 31px;
+  }
+  .carte--heb {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    flex-basis: auto;
+  }
+  .carte--heb__pic {
+    object-fit: cover;
+  }
+}
 /* ------------------------------ POPULAIRE -------------------------------*/
 
 .Populaire {
@@ -380,6 +437,44 @@ a {
   margin-left: 10px;
   width: 300px;
   height: 26px;
+}
+@media screen and (max-width: 992px) {
+  .Populaire {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 278px;
+    max-width: 880px;
+    height: 100%;
+  }
+  .Populaire__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .Pop {
+    margin: 34px auto 26px 30px;
+  }
+  .cartes--pop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 30px 0 30px;
+    max-width: 880px;
+    gap: 23px;
+    padding: 0 0 48px 0;
+  }
+  .chartline {
+    margin: 39px 40px auto auto;
+  }
+  .carte--pop {
+    max-width: 252px;
+    height: 144px;
+  }
+  .carte--pop__pic {
+    max-width: 106px;
+    max-height: 144px;
+  }
 }
 
 /* ------------------------------ CARTES POPULAIRE -------------------------------*/
@@ -507,43 +602,6 @@ a {
   }
 
   /* --------------------------------- POPULAIRE ------------------------*/
-
-  .Populaire {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 278px;
-    max-width: 880px;
-    height: 100%;
-  }
-  .Populaire__header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin: 0;
-  }
-  .Pop {
-    margin: 34px auto 26px 30px;
-  }
-  .cartes--pop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 30px 0 30px;
-    max-width: 880px;
-    gap: 23px;
-    padding: 0 0 48px 0;
-  }
-  .chartline {
-    margin: 39px 40px auto auto;
-  }
-  .carte--pop {
-    max-width: 252px;
-    height: 144px;
-  }
-  .carte--pop__pic {
-    max-width: 106px;
-    max-height: 144px;
-  }
 
   /* ------------------------------- SECTION -------------------------------- */
 
