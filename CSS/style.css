@@ -20,6 +20,13 @@ a {
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width: 992px) {
+  .body {
+    max-width: 992px;
+    margin: 0px auto;
+    padding: 0 55px;
+  }
+}
 @media screen and (max-width: 767px) {
   .body {
     padding: 0 50px;
@@ -41,6 +48,9 @@ a {
   margin: 8px 0px 0px 0px;
 }
 @media screen and (max-width: 767px) {
+  .Titres {
+    margin: 31px -20px;
+  }
   .titre1,
   .titre2 {
     display: flex;
@@ -92,8 +102,9 @@ a {
   }
   .formulaire {
     display: flex;
-    width: 100%;
+    width: auto;
     align-items: center;
+    margin: 0 -20px;
   }
   .formulaire__bouton {
     border: 2px solid white;
@@ -146,7 +157,6 @@ a {
   align-items: baseline;
   margin-top: 32px;
 }
-
 .filtre {
   display: flex;
   flex-direction: row;
@@ -221,7 +231,8 @@ a {
   .filtres {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
+    margin: 34px -20px;
   }
   .boutons {
     display: flex;
@@ -272,6 +283,14 @@ a {
   font-size: 18px;
   font-weight: 700;
 }
+@media screen and (max-width: 767px) {
+  .resultats {
+    margin: 43px -20px;
+  }
+  .nombre {
+    padding: 0 20px;
+  }
+}
 /* -------------------------------- CONTENU ----------------------------*/
 .contenu {
   display: flex;
@@ -296,6 +315,7 @@ a {
   .contenu {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0 -50px;
   }
 }
 
@@ -305,7 +325,6 @@ a {
   display: flex;
   background-color: #d9d9d9;
   border-radius: 20px;
-  flex-basis: 880px;
 }
 .ancre1 {
   display: flex;
@@ -325,12 +344,12 @@ a {
   .main {
     display: flex;
     flex-direction: column;
-    margin: 0 -50px;
+    background-color: white;
   }
   .Populaire {
     display: flex;
     flex-direction: column;
-    margin: 0 -50px;
+    border-radius: 0px;
   }
 }
 
@@ -394,7 +413,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .cartes--heb {
-    margin: 0 40px;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -428,6 +447,46 @@ a {
   align-items: baseline;
   justify-content: space-evenly;
 }
+.cartes--pop {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 40px 34px 37px;
+  gap: 33px;
+}
+.carte--pop {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  width: 343px;
+  height: 144px;
+}
+.carte--pop__pic {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding: 3px 0 3px 3px;
+  max-width: 137px;
+  object-fit: cover;
+}
+.carte--pop__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 0 10px;
+  justify-content: space-around;
+}
+.carte--pop__header h3 {
+  margin: 0 5px 0 0;
+}
+.carte--pop__body p {
+  margin: 0;
+}
+.carte--pop__footer {
+  display: flex;
+}
 .chartline {
   color: #0065fc;
 }
@@ -438,6 +497,7 @@ a {
   width: 300px;
   height: 26px;
 }
+
 @media screen and (max-width: 992px) {
   .Populaire {
     display: flex;
@@ -467,13 +527,22 @@ a {
   .chartline {
     margin: 39px 40px auto auto;
   }
-  .carte--pop {
-    max-width: 252px;
-    height: 144px;
-  }
   .carte--pop__pic {
     max-width: 106px;
     max-height: 144px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cartes--pop {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .carte--pop {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: none;
   }
 }
 
@@ -526,10 +595,28 @@ a {
   font-size: 16px;
   margin: 15px 0 10px 10px;
 }
+@media screen and (max-width: 992px) {
+  .section {
+    display: flex;
+    max-width: 880px;
+  }
+  .section__carte {
+    display: flex;
+    gap: 25px;
+  }
+  .carte--act {
+    min-width: 140px;
+  }
+  .carte--act__pic {
+    min-height: 84px;
+  }
+}
 @media screen and (max-width: 767px) {
   .section {
     display: flex;
     flex-direction: column;
+    margin: 50px -50px;
+    padding: 0 20px;
   }
   .section__carte {
     display: flex;
@@ -582,49 +669,20 @@ a {
 .assistance a {
   margin: 8px 0 8px 0;
 }
+@media screen and (max-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 880px;
+  }
+}
 @media screen and (max-width: 767px) {
   .footer {
     display: flex;
+    margin: 0 -50px;
   }
   .pied-de-page {
     display: flex;
     flex-direction: column;
   }
 }
-
-/* ------------------------RESPONSIVE TABLETTE ------------------*/
-
-@media screen and (max-width: 992px) {
-  .body {
-    max-width: 992px;
-    margin: 0px auto;
-    padding: 0 55px;
-  }
-
-  /* --------------------------------- POPULAIRE ------------------------*/
-
-  /* ------------------------------- SECTION -------------------------------- */
-
-  .section {
-    display: flex;
-    max-width: 880px;
-  }
-  .section__carte {
-    display: flex;
-    gap: 25px;
-  }
-  .carte--act {
-    min-width: 140px;
-  }
-  .carte--act__pic {
-    min-height: 84px;
-  }
-
-  /* -------------------------------- FOOTER ------------------------*/
-
-  .footer {
-    max-width: 880px;
-  }
-}
-
-/* ----------------------RESPONDIVE MOBILE --------------------*/

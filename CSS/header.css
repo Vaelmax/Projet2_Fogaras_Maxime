@@ -1,7 +1,6 @@
 .Header_menu {
   width: 250px;
 }
-
 .entete {
   display: flex;
   align-items: baseline;
@@ -47,6 +46,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .Header {
+    margin: 0 -50px;
+  }
   .entete {
     display: flex;
     flex-direction: column;
