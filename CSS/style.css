@@ -93,19 +93,8 @@ a {
   .entete__menu1,
   .entete__menu2 {
     width: 50%;
-  }
-  .entete__menu1 {
     border-bottom: solid 2px;
     border-color: white;
-  }
-  .entete__menu2 {
-    border-bottom: solid 2px;
-    border-color: white;
-  }
-  .entete__menu1:hover {
-    border-top: none;
-  }
-  .entete__menu2:hover {
     border-top: none;
   }
 }
@@ -611,7 +600,8 @@ a {
     margin: 39px 40px auto auto;
   }
   .carte--pop__pic {
-    max-width: 106px;
+    width: 106px;
+    flex-shrink: 0;
     max-height: 144px;
   }
 }
