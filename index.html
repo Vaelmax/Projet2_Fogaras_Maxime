@@ -8,25 +8,31 @@
       src="https://kit.fontawesome.com/e2993d89cf.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
     <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
   </head>
   <body>
-    <!---------------------------------- HEADER ----------------------------------->
-    <div class="Header">
+    <!--
+      == HEADER
+      -->
+    <div class="header">
       <header class="entete">
         <h1>
           <img
             class="entete__logo"
-            src="images/Images Booki/logo/Booki.png"
-            width="61.09"
+            src="images/logo/Booki.png"
+            width="61"
             height="19"
             alt="Booki"
           />
         </h1>
-
-        <div class="Header_menu">
+        <div class="header_menu">
           <nav class="entete__menu">
             <a class="entete__menu1" href="#ancre1">Hébergements</a>
             <a class="entete__menu2" href="#ancre2">Activités</a>
@@ -34,14 +40,18 @@
         </div>
       </header>
     </div>
-    <!------------------------------- TITRE 1 et 2 --------------------------------->
-    <div class="Titres">
+    <!--
+      == TITRE 1 et 2
+      -->
+    <div class="titres">
       <h2 class="titre1">
         Trouver votre hébergement pour des vacances de rêve
       </h2>
       <p class="titre2">En plein centre-ville ou en pleine nature</p>
     </div>
-    <!-------------------------------- FORMULAIRE ---------------------------------->
+    <!--
+      == FORMULAIRE 
+    -->
     <form method="get" action="#" class="formulaire">
       <label class="formulaire__dot" for="location-search">
         <i class="iconify localisation" data-icon="fa6-solid:location-dot"></i>
@@ -61,51 +71,61 @@
         ></i>
       </button>
     </form>
-    <!------------------------------- MENU FILTRES --------------------------------->
+    <!--
+      == MENU FILTRES 
+    -->
     <div class="filtres">
       <h3>Filtres</h3>
       <nav class="boutons">
         <ul class="filtre">
           <li class="bouton1">
             <a href="#">Economique</a
-            ><i class="iconify Bill" data-icon="fa6-solid:money-bill-wave"></i>
+            ><i class="iconify bill" data-icon="fa6-solid:money-bill-wave"></i>
           </li>
           <li class="bouton2">
             <a href="#">Familial</a
-            ><i class="iconify Man" data-icon="ion:man"></i>
+            ><i class="iconify man" data-icon="ion:man"></i>
           </li>
           <li class="bouton3">
             <a href="#">Romantique</a
-            ><i class="iconify Heart" data-icon="mdi:cards-heart"></i>
+            ><i class="iconify heart" data-icon="mdi:cards-heart"></i>
           </li>
 
           <li class="bouton4">
             <a href="#">Animaux autorisés</a
-            ><i class="iconify Dog" data-icon="fa6-solid:dog"></i>
+            ><i class="iconify dog" data-icon="fa6-solid:dog"></i>
           </li>
         </ul>
       </nav>
     </div>
-    <!----------------------------------- RESULTATS -------------------------------->
+    <!--
+      == RESULTATS 
+    -->
     <div class="resultats">
       <div><p class="info">i</p></div>
       <div class="nombre">
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </div>
-    <!----------------------------------- CONTENU ------------------------------------->
+    <!--
+      == CONTENU 
+    -->
     <div class="contenu">
-      <!---------------------------------- MAIN -------------------------------------->
+      <!--
+        == MAIN 
+      -->
       <div class="main">
         <div>
           <h2 id="ancre1" class="title">Hébergements à Marseille</h2>
 
-          <!------------------------------ CARTE HEBERGEMENT -------------------------------->
+          <!--
+            == CARTE HEBERGEMENT 
+          -->
           <div class="cartes--heb">
             <figure class="carte--heb">
               <img
                 class="carte--heb__pic"
-                src="images/Images Booki/hebergements/4_small/auberge_la_canebiere.jpg"
+                src="images/hebergements/4_small/auberge_la_canebiere.jpg"
                 alt="hotel"
               />
               <div class="carte--heb__content">
@@ -122,11 +142,13 @@
                 </div>
               </div>
             </figure>
-            <!--------------------------------- CARTE2 ------------------------------->
+            <!--
+              == CARTE2 
+            -->
             <figure class="carte--heb">
               <img
                 class="carte--heb__pic"
-                src="images/Images Booki/hebergements/4_small/hotel_du_port.jpg"
+                src="images/hebergements/4_small/hotel_du_port.jpg"
                 alt="hotel"
               />
               <div class="carte--heb__content">
@@ -141,11 +163,13 @@
                 </div>
               </div>
             </figure>
-            <!------------------------------- CARTE3 --------------------------------->
+            <!--
+              == CARTE3 
+            -->
             <figure class="carte--heb">
               <img
                 class="carte--heb__pic"
-                src="images/Images Booki/hebergements/4_small/hotel_les_mouettes.jpg"
+                src="images/hebergements/4_small/hotel_les_mouettes.jpg"
                 alt="hotel"
               />
               <div class="carte--heb__content">
@@ -162,11 +186,13 @@
                 </div>
               </div>
             </figure>
-            <!------------------------------- CARTE4 --------------------------------->
+            <!--
+              == CARTE4 
+            -->
             <figure class="carte--heb">
               <img
                 class="carte--heb__pic"
-                src="images/Images Booki/hebergements/4_small/hotel_de_la_mer.jpg"
+                src="images/hebergements/4_small/hotel_de_la_mer.jpg"
                 alt="hotel"
               />
               <div class="carte--heb__content">
@@ -181,11 +207,13 @@
                 </div>
               </div>
             </figure>
-            <!------------------------------- CARTE5 --------------------------------->
+            <!--
+              == CARTE5 
+              -->
             <figure class="carte carte--heb">
               <img
                 class="carte--heb__pic"
-                src="images/Images Booki/hebergements/4_small/auberge_le_panier.jpg"
+                src="images/hebergements/4_small/auberge_le_panier.jpg"
                 alt="hotel"
               />
               <div class="carte--heb__content">
@@ -202,11 +230,13 @@
                 </div>
               </div>
             </figure>
-            <!------------------------------- CARTE6 --------------------------------->
+            <!--
+              == CARTE6 
+              -->
             <figure class="carte--heb">
               <img
                 class="carte--heb__pic"
-                src="images/Images Booki/hebergements/4_small/hotel_chez_amina.jpg"
+                src="images/hebergements/4_small/hotel_chez_amina.jpg"
                 alt="hotel"
               />
               <div class="carte--heb__content">
@@ -226,17 +256,19 @@
         </div>
       </div>
 
-      <!------------------------------- POPULAIRE -------------------------------->
-      <div class="Populaire">
-        <div class="Populaire__header">
-          <h2 class="Pop">Les plus populaires</h2>
+      <!--
+        == POPULAIRE 
+        -->
+      <div class="populaire">
+        <div class="populaire__header">
+          <h2 class="pop">Les plus populaires</h2>
           <i class="iconify chartline" data-icon="fa6-solid:chart-line"></i>
         </div>
         <div class="cartes--pop">
           <figure class="carte--pop">
             <img
               class="carte--pop__pic"
-              src="images/Images Booki/hebergements/4_small/hotel_le_soleil_du_matin.jpg"
+              src="images/hebergements/4_small/hotel_le_soleil_du_matin.jpg"
               alt="hotel"
             />
             <div class="carte--pop__content">
@@ -257,7 +289,7 @@
           <figure class="carte--pop">
             <img
               class="carte--pop__pic"
-              src="images/Images Booki/hebergements/4_small/chambre_hotes_au_coeur_de_eau.jpg"
+              src="images/hebergements/4_small/chambre_hotes_au_coeur_de_eau.jpg"
               alt="hotel"
             />
             <div class="carte--pop__content">
@@ -278,7 +310,7 @@
           <figure class="carte--pop">
             <img
               class="carte--pop__pic"
-              src="images/Images Booki/hebergements/4_small/hotel_bleu_et_blanc.jpg"
+              src="images/hebergements/4_small/hotel_bleu_et_blanc.jpg"
               alt="hotel"
             />
             <div class="carte--pop__content">
@@ -297,18 +329,22 @@
       </div>
     </div>
 
-    <!------------------------------ SECTION ------------------------------->
+    <!--
+      == SECTION 
+      -->
 
     <div class="section">
       <div>
         <h2 id="ancre2" class="title1">Activités à Marseille</h2>
       </div>
-      <!-------------------------- CARD3 --------------------------------->
+      <!--
+        == CARD3 
+        -->
       <div class="section__carte">
         <figure class="carte--act">
           <img
             class="carte--act__pic"
-            src="images/Images Booki/activites/3_medium/vieux_port.jpg"
+            src="images/activites/3_medium/vieux_port.jpg"
             alt="hotel"
           />
           <div class="carte--act__header"><h3>Hotel du Port</h3></div>
@@ -317,7 +353,7 @@
         <figure class="carte--act">
           <img
             class="carte--act__pic"
-            src="images/Images Booki/activites/3_medium/fort_de_pomegues.jpg"
+            src="images/activites/3_medium/fort_de_pomegues.jpg"
             alt="hotel"
           />
           <div class="carte--act__header"><h3>Fort de Pomègues</h3></div>
@@ -326,7 +362,7 @@
         <figure class="carte--act">
           <img
             class="carte--act__pic"
-            src="images/Images Booki/activites/3_medium/parc_nationnal.jpg"
+            src="images/activites/3_medium/parc_nationnal.jpg"
             alt="hotel"
           />
           <div class="carte--act__header">
@@ -337,7 +373,7 @@
         <figure class="carte--act">
           <img
             class="carte--act__pic"
-            src="images/Images Booki/activites/3_medium/notre_dame.jpg"
+            src="images/activites/3_medium/notre_dame.jpg"
             alt="hotel"
           />
           <div class="carte--act__header"><h3>Notre-Dame-de-la-Garde</h3></div>
@@ -345,7 +381,9 @@
       </div>
     </div>
 
-    <!------------------------------ FOOTER -------------------------------->
+    <!--
+      == FOOTER 
+      -->
 
     <footer class="footer">
       <div class="pied-de-page">
