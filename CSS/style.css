@@ -437,6 +437,15 @@ a {
 
 /* ------------------------------ CARTE ACTIVITE -----------------------------------*/
 
+/*
+.carte--act-a{
+  display:flex;
+  flex-direction: column;
+}
+.carte--act {
+  flex-grow:1;
+}
+/* */
 .carte--act {
   margin: 0;
   display: flex;
